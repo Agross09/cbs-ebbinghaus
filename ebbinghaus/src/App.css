@@ -37,6 +37,36 @@
   align-items: center;
 }
 
+.sidenav a {
+  position: absolute;
+  left: -130px;
+  transition: 0.5s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  opacity: 0.6;
+}
+
+.sidenav a:hover {
+  left: 0;
+  opacity: 1;
+}
+
+
+#delboeuf {
+  top: 68px;
+  background-color: #4da8ff;
+  color: black;
+}
+
+#ebbinghaus {
+  top: 20px;
+  background-color: #b3daff;
+  color: black
+}
+
+
 .init-circle {
   display:"inline-block";
   background-color: yellow;
