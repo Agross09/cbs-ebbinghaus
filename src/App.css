@@ -29,9 +29,18 @@
 }
 
 .illusion-container {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 60vh;
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illusion-container-delboeuf {
+  /* border: 1px solid white; */
+  width: 50vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,9 +62,8 @@
   opacity: 1;
 }
 
-
 #delboeuf {
-  top: 68px;
+  top: 116px;
   background-color: #4da8ff;
   color: black;
 }
@@ -63,38 +71,49 @@
 #ebbinghaus {
   top: 20px;
   background-color: #b3daff;
-  color: black
+  color: black;
 }
 
+#ponzo {
+  top: 68px;
+  background-color: #80c1ff;
+  color: black;
+}
 
 .init-circle {
-  display:"inline-block";
+  display: 'inline-block';
   background-color: yellow;
   border-radius: 50%;
   display: block;
   position: absolute;
-  width: 10vh; height: 10vh;
+  width: 10vh;
+  height: 10vh;
 }
 
 .surround-circle {
-  display:"inline-block";
+  display: 'inline-block';
   background-color: purple;
   border-radius: 50%;
   display: block;
   position: absolute;
-  width: 15vh; height: 15vh;
+  width: 15vh;
+  height: 15vh;
 }
 
 .surround-circle-small {
-  display:"inline-block";
+  display: 'inline-block';
   background-color: purple;
   border-radius: 50%;
   display: block;
   position: absolute;
-  width: 5vh; height: 5vh;
+  width: 5vh;
+  height: 5vh;
 }
 
-.circle-container img { display: block; width: 50%; }
+.circle-container img {
+  display: block;
+  width: 50%;
+}
 
 .circle-container {
   display: flex;
@@ -102,48 +121,139 @@
   align-items: center;
 }
 
-#deg0 { transform: translate(6em); }
-#deg30 { transform: rotate(30deg) translate(6em) rotate(-30deg); }
-#deg60 { transform: rotate(60deg) translate(6em) rotate(-60deg); }
-#deg90 { transform: rotate(90deg) translate(6em) rotate(-90deg); }
-#deg120 { transform: rotate(120deg) translate(6em) rotate(-120deg); }
-#deg150 { transform: rotate(150deg) translate(6em) rotate(-150deg); }
-#deg180 { transform: translate(-6em); }
-#deg210 { transform: rotate(210deg) translate(6em) rotate(-210deg); }
-#deg240 { transform: rotate(240deg) translate(6em) rotate(-240deg); }
-#deg270 { transform: rotate(270deg) translate(6em) rotate(-270deg); }
-#deg300 { transform: rotate(300deg) translate(6em) rotate(-300deg); }
-#deg330 { transform: rotate(330deg) translate(6em) rotate(-330deg); }
+.leftLine {
+  background-color: purple;
+  height: 50vh;
+  width: 5px;
+  transform: rotate(20deg);
+}
 
+.rightLine {
+  background-color: purple;
+  height: 50vh;
+  width: 5px;
+  transform: rotate(160deg);
+}
 
-#deg0s { transform: translate(4em); }
-#deg30s { transform: rotate(30deg) translate(4em) rotate(-30deg); }
-#deg60s { transform: rotate(60deg) translate(4em) rotate(-60deg); }
-#deg90s { transform: rotate(90deg) translate(4em) rotate(-90deg); }
-#deg120s { transform: rotate(120deg) translate(4em) rotate(-120deg); }
-#deg150s { transform: rotate(150deg) translate(4em) rotate(-150deg); }
-#deg180s { transform: translate(-4em); }
-#deg210s { transform: rotate(210deg) translate(4em) rotate(-210deg); }
-#deg240s { transform: rotate(240deg) translate(4em) rotate(-240deg); }
-#deg270s { transform: rotate(270deg) translate(4em) rotate(-270deg); }
-#deg300s { transform: rotate(300deg) translate(4em) rotate(-300deg); }
-#deg330s { transform: rotate(330deg) translate(4em) rotate(-330deg); }
+.tracks {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 5px;
+  background-color: purple;
+}
 
+.topTrack {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 5px;
+  background-color: yellow;
+}
+
+.bottomTrack {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 5px;
+  background-color: yellow;
+}
+
+#deg0 {
+  transform: translate(6em);
+}
+#deg30 {
+  transform: rotate(30deg) translate(6em) rotate(-30deg);
+}
+#deg60 {
+  transform: rotate(60deg) translate(6em) rotate(-60deg);
+}
+#deg90 {
+  transform: rotate(90deg) translate(6em) rotate(-90deg);
+}
+#deg120 {
+  transform: rotate(120deg) translate(6em) rotate(-120deg);
+}
+#deg150 {
+  transform: rotate(150deg) translate(6em) rotate(-150deg);
+}
+#deg180 {
+  transform: translate(-6em);
+}
+#deg210 {
+  transform: rotate(210deg) translate(6em) rotate(-210deg);
+}
+#deg240 {
+  transform: rotate(240deg) translate(6em) rotate(-240deg);
+}
+#deg270 {
+  transform: rotate(270deg) translate(6em) rotate(-270deg);
+}
+#deg300 {
+  transform: rotate(300deg) translate(6em) rotate(-300deg);
+}
+#deg330 {
+  transform: rotate(330deg) translate(6em) rotate(-330deg);
+}
+
+#deg0s {
+  transform: translate(4em);
+}
+#deg30s {
+  transform: rotate(30deg) translate(4em) rotate(-30deg);
+}
+#deg60s {
+  transform: rotate(60deg) translate(4em) rotate(-60deg);
+}
+#deg90s {
+  transform: rotate(90deg) translate(4em) rotate(-90deg);
+}
+#deg120s {
+  transform: rotate(120deg) translate(4em) rotate(-120deg);
+}
+#deg150s {
+  transform: rotate(150deg) translate(4em) rotate(-150deg);
+}
+#deg180s {
+  transform: translate(-4em);
+}
+#deg210s {
+  transform: rotate(210deg) translate(4em) rotate(-210deg);
+}
+#deg240s {
+  transform: rotate(240deg) translate(4em) rotate(-240deg);
+}
+#deg270s {
+  transform: rotate(270deg) translate(4em) rotate(-270deg);
+}
+#deg300s {
+  transform: rotate(300deg) translate(4em) rotate(-300deg);
+}
+#deg330s {
+  transform: rotate(330deg) translate(4em) rotate(-330deg);
+}
 
 .ebbinghaus {
-  border: 1px solid white;
   display: flex;
   flex-direction: row;
 }
 
 .illusion-tools {
-  border: 1px solid white;
+  margin-top: 10vh;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
 }
 
-.ebbinghaus-explanation {
+.illusion-tools-delboeuf {
+  margin-top: 10vh;
+  margin-left: 20vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
 
+.illusion-explanation {
+  text-align: justify;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 @keyframes circle-spin {
